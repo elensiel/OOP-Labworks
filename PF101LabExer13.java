@@ -15,9 +15,14 @@ public class PF101LabExer13 {
         int myArr[] = new int[arrlength];
 
         inputArray(myArr);
-        dispayArray(myArr);
+        displayArray(myArr);
         sumArray(myArr);
         averageArray(myArr);
+        oddArray(myArr);
+        evenArray(myArr);
+        divbyFiveArray(myArr);
+        highestArray(myArr);
+        lowestArray(myArr);
     }
 
     // clears terminal
@@ -33,7 +38,7 @@ public class PF101LabExer13 {
         }
     }
 
-    static void dispayArray(int[] arr) {
+    static void displayArray(int[] arr) {
         clear();
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
@@ -58,5 +63,66 @@ public class PF101LabExer13 {
         }
 
         System.out.println("The average of your array is " + (temp / arr.length));
+    }
+
+    static void oddArray(int[] arr) {
+        System.out.print("The odd number(s) in the array are ");
+
+        // loop thru array
+        for (int i = 0; i < arr.length; i++) {
+            // check if odd
+            if ((arr[i] % 2) != 0) {
+                System.out.print(arr[i] + ", ");
+            }
+        }
+        System.out.println();
+    }
+
+    static void evenArray(int[] arr) {
+        System.out.print("The even number(s) in the array are ");
+
+        // loop thru array
+        for (int i = 0; i < arr.length; i++) {
+            // check if even
+            if ((arr[i] % 2) == 0) {
+                System.out.print(arr[i] + ", ");
+            }
+        }
+        System.out.println();
+    }
+
+    static void divbyFiveArray(int[] arr) {
+        System.out.print("Divisible numbers by 5 in the array are ");
+
+        // loop thru array
+        for (int i = 0; i < arr.length; i++) {
+            // check if div by 5
+            if ((arr[i] % 5) == 0) {
+                System.out.print(arr[i] + ", ");
+            }
+        }
+        System.out.println();
+    }
+
+    static void highestArray(int[] arr) {
+        int maxValue = arr[0];
+
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > maxValue) {
+                maxValue = arr[i];
+            }
+        }
+        System.out.println("The highest value in the array is " + maxValue);
+    }
+
+    static void lowestArray(int[] arr) {
+        int minValue = arr[0];
+
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] < minValue) {
+                minValue = arr[i];
+            }
+        }
+        System.out.println("The lowest value in the array is " + minValue);
     }
 }
