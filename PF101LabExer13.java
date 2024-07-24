@@ -71,7 +71,6 @@ public class PF101LabExer13 {
         return sum /= arr.length;
     }
 
-    // TODO -- , , , , lowestArray()
     static String oddArray(int[] arr) {
         String temp = "";
         for (int i = 0; i < arr.length; i++) {
