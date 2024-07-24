@@ -20,6 +20,11 @@ public class PF101LabExer13 {
 
         System.out.println("\nSum: " + sumArray(myArr));
         System.out.println("Average: " + averageArray(myArr));
+        System.out.println("Odd elements: " + oddArray(myArr));
+        System.out.println("Even elements: " + evenArray(myArr));
+        System.out.println("Elements divisible by 5: " + divby5Array(myArr));
+        System.out.println("Highest number: " + highestArray(myArr));
+        System.out.println("Lowest number: " + lowestArray(myArr));
     }
 
     // clears terminal
@@ -66,5 +71,59 @@ public class PF101LabExer13 {
         return sum /= arr.length;
     }
 
-    // TODO -- oddArray(), evenArray(), divby5Array(), highestArray(), lowestArray()
+    // TODO -- , , , , lowestArray()
+    static String oddArray(int[] arr) {
+        String temp = "";
+        for (int i = 0; i < arr.length; i++) {
+            if ((arr[i] % 2) != 0) {
+                temp += String.valueOf(arr[i]) + " ";
+            }
+        }
+
+        return temp;
+    }
+
+    static String evenArray(int[] arr) {
+        String temp = "";
+        for (int i = 0; i < arr.length; i++) {
+            if ((arr[i] % 2) == 0) {
+                temp += String.valueOf(arr[i]) + " ";
+            }
+        }
+
+        return temp;
+    }
+
+    static String divby5Array(int[] arr) {
+        String temp = "";
+        for (int i = 0; i < arr.length; i++) {
+            if ((arr[i] % 5) == 0) {
+                temp += String.valueOf(arr[i]) + " ";
+            }
+        }
+
+        return temp;
+    }
+
+    static int highestArray(int[] myArr) {
+        int maxValue = myArr[0];
+        for (int i = 1; i < myArr.length; i++) {
+            if (myArr[i] > maxValue) {
+                maxValue = myArr[i];
+            }
+        }
+
+        return maxValue;
+    }
+
+    static int lowestArray(int[] myArr) {
+        int minValue = myArr[0];
+        for (int i = 1; i < myArr.length; i++) {
+            if (myArr[i] < minValue) {
+                minValue = myArr[i];
+            }
+        }
+
+        return minValue;
+    }
 }
