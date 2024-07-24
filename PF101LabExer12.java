@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class PF101LabExer12 {
+
     public static void main(String[] args) {
         Scanner INPUT = new Scanner(System.in);
 

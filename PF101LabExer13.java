@@ -92,7 +92,7 @@ public class PF101LabExer13 {
     }
 
     static void divbyFiveArray(int[] arr) {
-        System.out.print("Divisible numbers by 5 in the array are ");
+        System.out.print("Divisible by 5 numbers in the array are ");
 
         // loop thru array
         for (int i = 0; i < arr.length; i++) {
