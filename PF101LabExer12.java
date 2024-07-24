@@ -8,8 +8,8 @@ public class PF101LabExer12 {
         System.out.print("Enter positive integer: ");
         double a = INPUT.nextInt();
 
-        System.out.println("The Harmonic Sum is: " + harmonicSum(a));
-        System.out.println("The Geometric Sum is: " + geometricSum(a));
+        System.out.printf("The Harmonic Sum is: %.2f", harmonicSum(a));
+        System.out.printf("\nThe Geometric Sum is: %.2f", geometricSum(a));
     }
 
     static double harmonicSum(double value) {

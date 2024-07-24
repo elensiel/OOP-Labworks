@@ -14,15 +14,12 @@ public class PF101LabExer13 {
         // initialize array
         int myArr[] = new int[arrlength];
 
-        inputArray(myArr);
+        myArr = inputArray(myArr);
+
         displayArray(myArr);
-        sumArray(myArr);
-        averageArray(myArr);
-        oddArray(myArr);
-        evenArray(myArr);
-        divbyFiveArray(myArr);
-        highestArray(myArr);
-        lowestArray(myArr);
+
+        System.out.println("\nSum: " + sumArray(myArr));
+        System.out.println("Average: " + averageArray(myArr));
     }
 
     // clears terminal
@@ -30,99 +27,44 @@ public class PF101LabExer13 {
         System.out.print("\033[H\033[2J");
     }
 
-    static void inputArray(int[] arr) {
+    // receives the array then
+    // input loop thru array length
+    // returns the new arr
+    static int[] inputArray(int[] arr) {
+        int[] tempArr = new int[arr.length];
         for (int i = 0; i < arr.length; i++) {
             clear();
-            System.out.print("Enter element " + (i + 1) + ": ");
-            arr[i] = INPUT.nextInt();
+            System.out.print("Enter element " + i + ": ");
+            tempArr[i] = INPUT.nextInt();
         }
+
+        return tempArr;
     }
 
     static void displayArray(int[] arr) {
         clear();
         for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
+            System.out.println("Index[" + i + "]: " + arr[i]);
         }
     }
 
-    static void sumArray(int[] arr) {
-        int temp = arr[0];
-
+    static int sumArray(int[] arr) {
+        int sum = arr[0];
         for (int i = 1; i < arr.length; i++) {
-            temp += arr[i];
+            sum += arr[i];
         }
 
-        System.out.println("\nThe sum of your array is " + temp);
+        return sum;
     }
 
-    static void averageArray(int[] arr) {
-        int temp = arr[0];
-
+    static int averageArray(int[] arr) {
+        int sum = arr[0];
         for (int i = 1; i < arr.length; i++) {
-            temp += arr[i];
+            sum += arr[i];
         }
 
-        System.out.println("The average of your array is " + (temp / arr.length));
+        return sum /= arr.length;
     }
 
-    static void oddArray(int[] arr) {
-        System.out.print("The odd number(s) in the array are ");
-
-        // loop thru array
-        for (int i = 0; i < arr.length; i++) {
-            // check if odd
-            if ((arr[i] % 2) != 0) {
-                System.out.print(arr[i] + ", ");
-            }
-        }
-        System.out.println();
-    }
-
-    static void evenArray(int[] arr) {
-        System.out.print("The even number(s) in the array are ");
-
-        // loop thru array
-        for (int i = 0; i < arr.length; i++) {
-            // check if even
-            if ((arr[i] % 2) == 0) {
-                System.out.print(arr[i] + ", ");
-            }
-        }
-        System.out.println();
-    }
-
-    static void divbyFiveArray(int[] arr) {
-        System.out.print("Divisible by 5 numbers in the array are ");
-
-        // loop thru array
-        for (int i = 0; i < arr.length; i++) {
-            // check if div by 5
-            if ((arr[i] % 5) == 0) {
-                System.out.print(arr[i] + ", ");
-            }
-        }
-        System.out.println();
-    }
-
-    static void highestArray(int[] arr) {
-        int maxValue = arr[0];
-
-        for (int i = 1; i < arr.length; i++) {
-            if (arr[i] > maxValue) {
-                maxValue = arr[i];
-            }
-        }
-        System.out.println("The highest value in the array is " + maxValue);
-    }
-
-    static void lowestArray(int[] arr) {
-        int minValue = arr[0];
-
-        for (int i = 1; i < arr.length; i++) {
-            if (arr[i] < minValue) {
-                minValue = arr[i];
-            }
-        }
-        System.out.println("The lowest value in the array is " + minValue);
-    }
+    // TODO -- oddArray(), evenArray(), divby5Array(), highestArray(), lowestArray()
 }
