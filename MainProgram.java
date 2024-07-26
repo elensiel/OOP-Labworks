@@ -1,3 +1,4 @@
+
 public class MainProgram {
     public static void main(String[] args) {
         myUtils myUtils = new myUtils();
@@ -23,6 +24,10 @@ public class MainProgram {
 
         objLot.lotWidth = 8;
         System.out.println("Lot Area: " + (objLot.lotLength * objLot.lotWidth));
+
+        objLot2.lotLength = objLot1.lotLength * 3;
+        objLot2.lotWidth = objLot1.lotWidth + objLot1.lotLength;
+        System.out.println("Lot Area of Lot 2: " + (objLot2.lotLength * objLot2.lotWidth));
 
         System.out.println("\nOwner's Full name of Lot 1: " + objLot1.ownerFirstName + " " + objLot1.ownerLastName);
         System.out.println("Owner's Full name of Lot 2: " + objLot2.ownerFirstName + " " + objLot2.ownerLastName);
