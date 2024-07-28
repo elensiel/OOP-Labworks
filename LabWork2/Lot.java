@@ -1,3 +1,5 @@
+package LabWork2;
+
 public class Lot {
     String ownerFirstName = "Juan";
     String ownerLastName = "Dela Cruz";

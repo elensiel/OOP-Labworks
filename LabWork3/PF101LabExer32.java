@@ -1,3 +1,5 @@
+package LabWork3;
+
 public class PF101LabExer32 {
     public static void main(String[] args) {
         int birthyear = 2002;

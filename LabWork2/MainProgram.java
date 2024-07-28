@@ -1,12 +1,13 @@
+package LabWork2;
 
 public class MainProgram {
     public static void main(String[] args) {
-        myUtils myUtils = new myUtils();
+        myLib myLib = new myLib();
         Lot objLot = new Lot();
         Lot objLot1 = new Lot();
         Lot objLot2 = new Lot();
 
-        myUtils.clear();
+        myLib.clear();
         System.out.println("Lot's address: " + objLot.address);
         System.out.println("Owner's Full name: " + objLot.ownerFirstName + " " + objLot.ownerLastName);
         System.out.println("Lot Area: " + (objLot.lotLength * objLot.lotWidth));

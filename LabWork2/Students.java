@@ -1,3 +1,5 @@
+package LabWork2;
+
 import java.io.InputStreamReader;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,11 +8,11 @@ public class Students {
     String name, address, email, birthday, age, grade;
 
     public static void main(String[] args) throws IOException {
-        myUtils myUtils = new myUtils();
+        myLib myLib = new myLib();
         Students BSIT = new Students();
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        myUtils.clear();
+        myLib.clear();
         System.out.print("Enter name: ");
         BSIT.name = reader.readLine();
 

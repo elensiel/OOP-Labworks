@@ -1,10 +1,12 @@
+package LabWork1;
+
 import java.util.Scanner;
 
 public class PF101LabExer13 {
     public static Scanner INPUT = new Scanner(System.in);
 
     public static void main(String[] args) {
-        myUtils.clear();
+        myLib.clear();
 
         // get length of array
         System.out.print("Enter length of array: ");
@@ -33,7 +35,7 @@ public class PF101LabExer13 {
     static int[] inputArray(int[] arr) {
         int[] tempArr = new int[arr.length];
         for (int i = 0; i < arr.length; i++) {
-            myUtils.clear();
+            myLib.clear();
             System.out.print("Enter element " + i + ": ");
             tempArr[i] = INPUT.nextInt();
         }
@@ -42,7 +44,7 @@ public class PF101LabExer13 {
     }
 
     static void displayArray(int[] arr) {
-        myUtils.clear();
+        myLib.clear();
         for (int i = 0; i < arr.length; i++) {
             System.out.println("Index[" + i + "]: " + arr[i]);
         }

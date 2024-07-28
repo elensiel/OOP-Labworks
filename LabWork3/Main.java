@@ -1,6 +1,8 @@
+package LabWork3;
+
 public class Main {
     public static void main(String[] args) {
-        myUtils myUtils = new myUtils();
+        myLib myLib = new myLib();
         Dog Rayne = new Dog();
 
         Rayne.color = "Gray, White, and Black";
@@ -9,7 +11,7 @@ public class Main {
         Rayne.length = 36;
         Rayne.weight = 30;
 
-        myUtils.clear();
+        myLib.clear();
         Rayne.showDetails();
     }
 }

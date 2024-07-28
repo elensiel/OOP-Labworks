@@ -1,3 +1,5 @@
+package LabWork3;
+
 public class Dog {
     String color, eyeColor;
     double height, weight, length;
