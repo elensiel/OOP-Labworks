@@ -19,7 +19,6 @@ public class PF101LabExer12 {
         double total = 0;
         for (double i = 1; i <= value; i++) {
             total += (1 / i);
-            // System.out.println(total);
         }
 
         return total;
@@ -27,7 +26,7 @@ public class PF101LabExer12 {
 
     static double geometricSum(double value) {
         double total = 0;
-        for (double i = 1; i <= value; i++) {
+        for (double i = 0; i <= value; i++) {
             total += (1 / (Math.pow(2, i)));
         }
 

@@ -16,6 +16,7 @@ public class PF101LabExer13 {
         // initialize array
         int myArr[] = new int[arrlength];
 
+        myLib.clear();
         myArr = inputArray(myArr);
 
         displayArray(myArr);
@@ -31,11 +32,11 @@ public class PF101LabExer13 {
 
     // receives the array then
     // input loop thru array length
-    // returns the new arr
+    // to temp array
+    // returns the temp array
     static int[] inputArray(int[] arr) {
         int[] tempArr = new int[arr.length];
         for (int i = 0; i < arr.length; i++) {
-            myLib.clear();
             System.out.print("Enter element " + i + ": ");
             tempArr[i] = INPUT.nextInt();
         }
