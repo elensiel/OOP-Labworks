@@ -2,7 +2,8 @@ package LabWork3;
 
 public class Dog {
     String name, color, eyeColor;
-    byte height, length, weight;
+    byte height, length;
+    short weight;
 
     public void showDetails() {
         System.out.println("Dog Name: " + name);
