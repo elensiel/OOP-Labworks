@@ -5,9 +5,13 @@ public class PF101LabExer32 {
         int birthyear = 2002;
         int currentyear = 2024;
         int age = difference(currentyear, birthyear);
+        double ageDouble = difference(currentyear, birthyear);
 
         System.out.println("Age: " + age);
         System.out.println("Current Year: " + sum(birthyear, age));
+
+        System.out.println("\nAge: " + ageDouble);
+        System.out.println("Birth year: " + difference(currentyear, ageDouble));
     }
 
     // SUMs
